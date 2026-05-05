@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnDelete" type="id" />
+    <item name="btnEdit" type="id" />
+    <item name="tvNim" type="id" />
+    <item name="tvNamaMhs" type="id" />
+</resources>

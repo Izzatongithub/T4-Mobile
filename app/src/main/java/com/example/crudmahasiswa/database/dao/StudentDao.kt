@@ -1,12 +1,11 @@
-package database.dao
+package com.example.crudmahasiswa.database.dao
 
 import androidx.room.Dao
-import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import database.entity.StudentEntity
+import com.example.crudmahasiswa.database.entity.StudentEntity
 import kotlinx.coroutines.flow.Flow
 
 

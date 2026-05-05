@@ -5,8 +5,8 @@ import android.view.View
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import database.AppDatabase
-import database.entity.StudentEntity
+import com.example.crudmahasiswa.database.AppDatabase
+import com.example.crudmahasiswa.database.entity.StudentEntity
 import kotlinx.coroutines.launch
 
 class FormFragment : Fragment(R.layout.fragment_form) {

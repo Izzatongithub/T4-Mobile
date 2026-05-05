@@ -1,11 +1,11 @@
-package database
+package com.example.crudmahasiswa.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import database.dao.StudentDao
-import database.entity.StudentEntity
+import com.example.crudmahasiswa.database.dao.StudentDao
+import com.example.crudmahasiswa.database.entity.StudentEntity
 
 
 // @Database mendaftarkan semua Entity dan menentukan versi database.

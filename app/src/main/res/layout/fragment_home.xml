@@ -1,34 +1,41 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F9">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#E3F2FD">
+        android:orientation="vertical">
 
+        <!-- HEADER -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Daftar Mahasiswa"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:padding="16dp"
-            android:textColor="#1565C0" />
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:background="@color/dimTheme"/>
 
-<!--        <ListView-->
-<!--            android:id="@+id/listView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"/>-->
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvMahasiswa"
+        <!-- CONTAINER LIST -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
-            android:clipToPadding="false" />
+            android:padding="12dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMahasiswa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:padding="8dp"
+                android:clipToPadding="false"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <!-- FAB -->
@@ -38,6 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:src="@android:drawable/ic_input_add"
-        app:layout_anchorGravity="bottom|end"
-        android:layout_gravity="bottom|end"/>
+        app:tint="@android:color/white"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/btnColorGeneral"/>
+
 </FrameLayout>

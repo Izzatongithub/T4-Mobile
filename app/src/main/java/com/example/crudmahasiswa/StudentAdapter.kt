@@ -1,5 +1,6 @@
 package com.example.crudmahasiswa
 
+import android.text.style.ClickableSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.crudmahasiswa.database.entity.StudentEntity
 
 class StudentAdapter(
-    private val onEdit: (StudentEntity) -> Unit,
-    private val onDelete: (StudentEntity) -> Unit,
-    private val onClick: (StudentEntity) -> Unit
+    private val onEditClick: (StudentEntity) -> Unit,
+    private val onDeleteClick: (StudentEntity) -> Unit,
+    private val onItemClick: (StudentEntity) -> Unit,
+
 ) : RecyclerView.Adapter<StudentAdapter.ViewHolder>() {
 
     private var list = listOf<StudentEntity>()
@@ -41,15 +43,15 @@ class StudentAdapter(
         holder.tvNim.text = student.nim
 
         holder.itemView.setOnClickListener {
-            onClick(student)
+            onItemClick(student)
         }
 
         holder.btnEdit.setOnClickListener {
-            onEdit(student)
+            onEditClick(student)
         }
 
         holder.btnDelete.setOnClickListener {
-            onDelete(student)
+            onDeleteClick(student)
         }
     }
 

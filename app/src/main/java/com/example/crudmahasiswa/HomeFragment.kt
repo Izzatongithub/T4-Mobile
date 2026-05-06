@@ -1,6 +1,5 @@
 package com.example.crudmahasiswa
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,9 +9,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.crudmahasiswa.database.AppDatabase
 import com.example.crudmahasiswa.database.dao.StudentDao
 import com.example.crudmahasiswa.database.entity.StudentEntity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
@@ -36,12 +37,12 @@ class HomeFragment : Fragment() {
         studentDao = db.studentDao()
 
         // Setup RecyclerView
-        val rvMahasiswa = view.findViewById<androidx.recyclerview.widget.RecyclerView>(R.id.rvMahasiswa)
+        val rvMahasiswa = view.findViewById<RecyclerView>(R.id.rvMahasiswa)
 
 
         adapter = StudentAdapter(
 
-            onEdit = { student ->
+            onEditClick = { student ->
                 val fragment = FormFragment().apply {
                     arguments = Bundle().apply {
                         putInt("studentId", student.idMhs)
@@ -53,12 +54,12 @@ class HomeFragment : Fragment() {
                     .commit()
             },
 
-            onDelete = { student ->
+            onDeleteClick = { student ->
                 // Langkah 7: Tampilkan dialog konfirmasi hapus
                 showDeleteConfirmationDialog(student.idMhs, student.namaMhs)
             },
 
-            onClick = { student ->
+            onItemClick = { student ->
                 val fragment: DetailMhsFragment = DetailMhsFragment().apply {
                     arguments = Bundle().apply {
                         putString("nama", student.namaMhs)
@@ -101,13 +102,7 @@ class HomeFragment : Fragment() {
         }
 
         // FAB tambah data
-//        val fab = view.findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.fabAdd)
-//        fab.setOnClickListener {
-//            findNavController().navigate(R.id.formFragment)
-//        }
-
-        // FAB tambah data
-        val fab = view.findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.fabAdd)
+        val fab = view.findViewById<FloatingActionButton>(R.id.fabAdd)
         fab.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, FormFragment())

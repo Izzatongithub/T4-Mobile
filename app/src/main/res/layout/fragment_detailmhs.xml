@@ -12,10 +12,11 @@
         android:layout_height="wrap_content"
         android:background="#3F51B5"
         android:padding="20dp"
-        android:text="←  Detail"
+        android:text="Detail Mahasiswa"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:backgroundTint="@color/dimTheme"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -35,7 +36,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="#3F51B5"
+                app:cardBackgroundColor="#22303c"
                 app:cardCornerRadius="40dp"
                 app:cardElevation="0dp">
 
@@ -80,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:text="📝 Catatan"
-                android:textColor="#3F51B5"
+                android:textColor="#22303c"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -106,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:backgroundTint="#3F51B5"
+                    android:backgroundTint="#22303c"
                     android:text="Simpan"
                     app:cornerRadius="8dp" />
 

@@ -8,52 +8,79 @@
 
 ---
 
-## 📌 Deskripsi Singkat
+## 📌 Deskripsi
 
-Aplikasi ini merupakan sistem manajemen data mahasiswa berbasis Android yang dikembangkan menggunakan bahasa **Kotlin**. Proyek ini dibuat untuk memenuhi Tugas Akhir pada mata kuliah *Mobile Programming*.
+Aplikasi ini merupakan sistem manajemen data mahasiswa berbasis Android yang dikembangkan menggunakan **Kotlin**.
+Proyek ini dibuat untuk memenuhi Tugas Akhir pada mata kuliah *Mobile Programming*.
 
-Aplikasi menyediakan fitur utama berupa:
+### ✨ Fitur Utama:
 
-* Sistem autentikasi sederhana (Login & Logout)
-* Pengelolaan data mahasiswa (CRUD: Create, Read, Update, Delete)
-* Pencarian data mahasiswa secara **real-time**
-* Kustomisasi profil pengguna
+* 🔐 Login & Logout
+* 🏠 Manajemen data mahasiswa (CRUD)
+* 🔍 Pencarian real-time
+* 👤 Profil pengguna
 
 ---
 
-## 🚀 Fitur Aplikasi
+## 🚀 Tampilan Aplikasi
 
 ### 🔐 Login
 
-<img src="https://github.com/user-attachments/assets/ecf008a2-3c3b-4ff5-bce6-4e78e7b84118" width="300"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3359d96b-b286-484e-94e8-7979ea403dbe" width="250"/>
+</p>
 
 ---
 
 ### 🏠 Home
 
-<img src="https://github.com/user-attachments/assets/14dcdf38-37c2-41fe-a8ff-af77c49cd9f4" width="300"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/292774b7-58db-4d2d-8bcb-2261d30a2713" width="250"/>
+</p>
 
 ---
 
-### ➕ Tambah Mahasiswa (Create)
+### ➕ Tambah Mahasiswa
 
-<img src="https://github.com/user-attachments/assets/bf3234c9-1fc4-499e-b5da-f366081b7245" width="300"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/06ada051-fcff-427b-bb2d-8451381b25bd" width="250"/>
+</p>
 
 ---
 
 ### ✏️ Update Mahasiswa
 
-<img src="https://github.com/user-attachments/assets/34c3c7ec-2f5d-4cb6-b5b5-0a0c4c21ef58" width="300"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/435f0932-b7fd-4eae-93ae-5a001f78ae94" width="250"/>
+</p>
 
 ---
 
-### 🚪 Logout
+### 🗑️ Delete Mahasiswa
 
-<img src="https://github.com/user-attachments/assets/9cd4f911-258e-4ace-80b0-fd3d8ea433e9" width="300"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/44815af3-c762-4ed6-a0a0-2ca245eb000b" width="250"/>
+</p>
 
 ---
 
-## ⚙️ Teknologi yang Digunakan
+### 🔍 Search Mahasiswa
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9113956a-8aaa-4702-8a75-eed817c6148f" width="250"/>
+</p>
+
+---
+
+### 👤 Profile
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/801d9ca1-56bb-4d9c-bbe2-628d32df0db2" width="250"/>
+</p>
+
+---
+
+## ⚙️ Teknologi
 
 * **Bahasa**: Kotlin
 * **Platform**: Android
@@ -61,24 +88,27 @@ Aplikasi menyediakan fitur utama berupa:
 
   * Activity & Fragment
   * RecyclerView
-  * Storage (Local / Database)
-  * UI Layout XML
+  * Local Storage / Database
+  * XML Layout
 
 ---
 
-## ⚠️ Kendala yang Dihadapi
+## ⚠️ Kendala
 
-1. Kesulitan memahami alur penggunaan **Fragment**
-2. Integrasi data dinamis dalam aplikasi
-3. Kompleksitas pada bagian backend yang saling terhubung
+* Memahami alur penggunaan Fragment
+* Integrasi data dinamis
+* Kompleksitas antar komponen
 
 ---
 
 ## 💡 Solusi
 
-1. Mempelajari kembali konsep **Fragment, Layout, dan Storage**
-2. Memahami alur kerja data dinamis dalam aplikasi
-3. Berdiskusi dengan teman dan memperdalam materi pembelajaran
+* Mempelajari ulang konsep Fragment & Lifecycle
+* Memahami flow data dalam aplikasi
+* Diskusi & eksplorasi dokumentasi
 
 ---
 
+## 📌 Catatan
+
+Aplikasi ini dikembangkan sebagai bagian dari pembelajaran dan masih dapat dikembangkan lebih lanjut.
